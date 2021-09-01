@@ -118,6 +118,9 @@ public class Main {
                                 System.out.println("---------- Danh sách sau khi xóa ---------");
                                 staffList.showList();
                             }
+                            case 5->{
+                                staffList.findStaff();
+                            }
                         }
                     } while (staffChoice != 0);
                     break;

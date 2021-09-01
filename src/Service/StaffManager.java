@@ -32,6 +32,19 @@ public class StaffManager {
             staff.showInfo();
         }
     }
+    public void findStaff(){
+        staffList = WriteReadStaff.readFile();
+        System.out.print("Nhập Id nhân viên : ");
+        int findID= Regix.enterInteger();
+        for (Staff staff : staffList){
+            if (staff.getId()==findID){
+                System.out.printf("| %-5s | %-20s | %-15s | %-15s%n", "Id", "Tên", "Ngày sinh ", "Vị trí");
+                staff.showInfo();
+            }
+        }
+
+
+    }
 
     public void deleteStaff() {
         staffList = WriteReadStaff.readFile();

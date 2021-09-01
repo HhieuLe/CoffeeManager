@@ -40,6 +40,7 @@ public class Menu {
         System.out.println("2. Thêm nhân viên");
         System.out.println("3. Sửa thông tin nhân viên");
         System.out.println("4. Xóa nhân viên");
+        System.out.println("5. Tìm kiếm nhân viên");
         System.out.println("0. Trở lại");
     }
     public static void editMenu(){
